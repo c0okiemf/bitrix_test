@@ -1,0 +1,5 @@
+<?
+$MESS["_ENTITY_ID_FIELD"] = "ID";
+$MESS["_ENTITY_UF_FIELD_MESSAGES_FIELD"] = "Message";
+$MESS["_ENTITY_UF_FIELD_MESSAGES_FIELD"] = "Date Added";
+?>
