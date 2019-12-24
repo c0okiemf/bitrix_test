@@ -16,7 +16,6 @@ class MessagesHandler
         if($cache->InitCache(self::CACHE_TTL, self::CACHE_ID, $cacheDir)) {
             $result = $cache->GetVars()['mess'];
         } else {
-            var_dump(1);
             $messRes = MessagesTable::getList([
                 'order' => ['UF_FIELD_DATE' => 'DESC'],
                 'limit' => $cnt,
