@@ -28,6 +28,7 @@ class Events
 
     public static function clearCache()
     {
+        Loader::includeModule('my');
         $obCache = new CPHPCache();
         $cacheDir = $_SERVER["DOCUMENT_ROOT"] . MessagesHandler::CACHE_DIR;
         $obCache->Clean(MessagesHandler::CACHE_ID, $cacheDir);
