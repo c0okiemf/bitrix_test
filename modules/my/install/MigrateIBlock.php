@@ -86,7 +86,7 @@ class MigrateIBlock
     public static function down()
     {
         self::connect();
-        $id = HighloadBlockTable::getList(['filter' => ['name' => self::TABLE_NAME], 'select' => ['ID']])->fetch();
+        $id = HighloadBlockTable::getList(['filter' => ['NAME' => self::TABLE_NAME], 'select' => ['ID']])->fetch();
         HighloadBlockTable::delete($id);
     }
 }
